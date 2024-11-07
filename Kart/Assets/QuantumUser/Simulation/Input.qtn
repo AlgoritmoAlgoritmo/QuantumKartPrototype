@@ -1,0 +1,4 @@
+input {
+	FP Horizontal;
+	FP Vertical;
+}

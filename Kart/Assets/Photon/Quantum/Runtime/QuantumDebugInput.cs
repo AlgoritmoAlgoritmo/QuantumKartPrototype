@@ -17,6 +17,10 @@ namespace Quantum {
     /// <param name="callback"></param>
     public void PollInput(CallbackPollInput callback) {
       Quantum.Input i = new Quantum.Input();
+
+      i.Horizontal = UnityEngine.Input.GetAxis("Horizontal").ToFP();
+      i.Vertical = UnityEngine.Input.GetAxis("Vertical").ToFP();
+
       callback.SetInput(i, DeterministicInputFlags.Repeatable);
     }
   }

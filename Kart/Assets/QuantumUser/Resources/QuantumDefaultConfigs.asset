@@ -316,7 +316,7 @@ MonoBehaviour:
     RawValue: 6554
   MaxContacts: 8
   LayerMask:
-    BitMask: -1
+    BitMask: 55
   UseManifoldNormal: 0
   AirControl: 1
   Acceleration:
@@ -418,6 +418,11 @@ MonoBehaviour:
   - SystemType:
       AssemblyQualifiedName: Quantum.Core.PlayerConnectedSystem, Quantum.Simulation,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    SystemName: 
+    StartDisabled: 0
+    Children: []
+  - SystemType:
+      AssemblyQualifiedName: Quantum.CarSystem, Quantum.Simulation
     SystemName: 
     StartDisabled: 0
     Children: []
