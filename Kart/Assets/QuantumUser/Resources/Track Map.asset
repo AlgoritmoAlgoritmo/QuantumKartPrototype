@@ -52,14 +52,14 @@ MonoBehaviour:
         RawValue: 65536
     Position:
       X:
-        RawValue: -32416
+        RawValue: 60320
       Y:
-        RawValue: -47477
+        RawValue: 115068
       Z:
-        RawValue: 8588
+        RawValue: 2844244
     PhysicsMaterial:
       Id:
-        Value: 0
+        Value: 3207203172163128735
     ShapeType: 2
     SphereRadius:
       RawValue: 0
@@ -69,14 +69,14 @@ MonoBehaviour:
       RawValue: 0
     BoxExtents:
       X:
-        RawValue: 196408
+        RawValue: 1971094
       Y:
-        RawValue: 3277
+        RawValue: 138255
       Z:
-        RawValue: 196408
+        RawValue: 32768
     SmoothSphereMeshCollisions: 0
     StaticData:
-      Name: ground
+      Name: wall
       Tag: Untagged
       Layer: 0
       Asset:
@@ -96,14 +96,14 @@ MonoBehaviour:
         RawValue: 65536
     Position:
       X:
-        RawValue: -32416
+        RawValue: 60320
       Y:
-        RawValue: 19660
+        RawValue: 115068
       Z:
-        RawValue: 1887436
+        RawValue: -1031751
     PhysicsMaterial:
       Id:
-        Value: 0
+        Value: 3207203172163128735
     ShapeType: 2
     SphereRadius:
       RawValue: 0
@@ -133,21 +133,21 @@ MonoBehaviour:
       X:
         RawValue: 0
       Y:
-        RawValue: 0
+        RawValue: 46340
       Z:
         RawValue: 0
       W:
-        RawValue: 65536
+        RawValue: 46340
     Position:
       X:
-        RawValue: -32416
+        RawValue: 1980173
       Y:
-        RawValue: 19660
+        RawValue: 106548
       Z:
-        RawValue: -1988558
+        RawValue: 865057
     PhysicsMaterial:
       Id:
-        Value: 0
+        Value: 3207203172163128735
     ShapeType: 2
     SphereRadius:
       RawValue: 0
@@ -184,14 +184,14 @@ MonoBehaviour:
         RawValue: 46340
     Position:
       X:
-        RawValue: 1887436
+        RawValue: -1761932
       Y:
-        RawValue: 11141
+        RawValue: 106548
       Z:
-        RawValue: -91750
+        RawValue: 865057
     PhysicsMaterial:
       Id:
-        Value: 0
+        Value: 3207203172163128735
     ShapeType: 2
     SphereRadius:
       RawValue: 0
@@ -221,22 +221,22 @@ MonoBehaviour:
       X:
         RawValue: 0
       Y:
-        RawValue: 46340
+        RawValue: 0
       Z:
         RawValue: 0
       W:
-        RawValue: 46340
+        RawValue: 65536
     Position:
       X:
-        RawValue: -1854668
+        RawValue: 60320
       Y:
-        RawValue: 11141
+        RawValue: 47930
       Z:
-        RawValue: -91750
+        RawValue: 965396
     PhysicsMaterial:
       Id:
-        Value: 0
-    ShapeType: 2
+        Value: 3207203172163128735
+    ShapeType: 4
     SphereRadius:
       RawValue: 0
     CapsuleRadius:
@@ -245,14 +245,14 @@ MonoBehaviour:
       RawValue: 0
     BoxExtents:
       X:
-        RawValue: 1971094
+        RawValue: 0
       Y:
-        RawValue: 138255
+        RawValue: 0
       Z:
-        RawValue: 32768
+        RawValue: 0
     SmoothSphereMeshCollisions: 0
     StaticData:
-      Name: wall
+      Name: ground
       Tag: Untagged
       Layer: 0
       Asset:
@@ -272,14 +272,14 @@ MonoBehaviour:
         RawValue: 65536
     Position:
       X:
-        RawValue: 1447359
+        RawValue: 1540096
       Y:
-        RawValue: -47477
+        RawValue: 47929
       Z:
-        RawValue: -1577433
+        RawValue: -620625
     PhysicsMaterial:
       Id:
-        Value: 0
+        Value: 3207203172163128735
     ShapeType: 4
     SphereRadius:
       RawValue: 0
@@ -316,14 +316,14 @@ MonoBehaviour:
         RawValue: 65536
     Position:
       X:
-        RawValue: -2953203
+        RawValue: -2860466
       Y:
-        RawValue: -47477
+        RawValue: 47930
       Z:
-        RawValue: -321653
+        RawValue: 635154
     PhysicsMaterial:
       Id:
-        Value: 0
+        Value: 3207203172163128735
     ShapeType: 4
     SphereRadius:
       RawValue: 0
@@ -360,14 +360,14 @@ MonoBehaviour:
         RawValue: 65536
     Position:
       X:
-        RawValue: -2976712
+        RawValue: -2883975
       Y:
-        RawValue: -47477
+        RawValue: 47930
       Z:
-        RawValue: -87085
+        RawValue: 869722
     PhysicsMaterial:
       Id:
-        Value: 0
+        Value: 3207203172163128735
     ShapeType: 4
     SphereRadius:
       RawValue: 0
@@ -404,14 +404,14 @@ MonoBehaviour:
         RawValue: 65536
     Position:
       X:
-        RawValue: 1376255
+        RawValue: 1468992
       Y:
-        RawValue: -53739
+        RawValue: 41667
       Z:
-        RawValue: 1014497
+        RawValue: 1971305
     PhysicsMaterial:
       Id:
-        Value: 0
+        Value: 3207203172163128735
     ShapeType: 4
     SphereRadius:
       RawValue: 0
@@ -448,14 +448,14 @@ MonoBehaviour:
         RawValue: 65536
     Position:
       X:
-        RawValue: -31788
+        RawValue: 60948
       Y:
-        RawValue: -58707
+        RawValue: 36700
       Z:
-        RawValue: 589186
+        RawValue: 1545994
     PhysicsMaterial:
       Id:
-        Value: 0
+        Value: 3207203172163128735
     ShapeType: 4
     SphereRadius:
       RawValue: 0
@@ -492,14 +492,14 @@ MonoBehaviour:
         RawValue: 65536
     Position:
       X:
-        RawValue: -2784639
+        RawValue: -2691903
       Y:
-        RawValue: -47477
+        RawValue: 47930
       Z:
-        RawValue: -285388
+        RawValue: 671419
     PhysicsMaterial:
       Id:
-        Value: 0
+        Value: 3207203172163128735
     ShapeType: 4
     SphereRadius:
       RawValue: 0
@@ -536,14 +536,14 @@ MonoBehaviour:
         RawValue: 65536
     Position:
       X:
-        RawValue: -2808636
+        RawValue: -2715899
       Y:
-        RawValue: -47477
+        RawValue: 47929
       Z:
-        RawValue: 227841
+        RawValue: 1184648
     PhysicsMaterial:
       Id:
-        Value: 0
+        Value: 3207203172163128735
     ShapeType: 4
     SphereRadius:
       RawValue: 0
@@ -580,14 +580,14 @@ MonoBehaviour:
         RawValue: 65536
     Position:
       X:
-        RawValue: -2526130
+        RawValue: -2433394
       Y:
-        RawValue: -47477
+        RawValue: 47930
       Z:
-        RawValue: -167719
+        RawValue: 789088
     PhysicsMaterial:
       Id:
-        Value: 0
+        Value: 3207203172163128735
     ShapeType: 4
     SphereRadius:
       RawValue: 0
@@ -613,105 +613,8 @@ MonoBehaviour:
       IsTrigger: 0
       ColliderIndex: 12
       MutableMode: 0
-  MapEntities:
-  - Components:
-    - rid: 6863118129225007104
-    - rid: 6863118129225007105
-    - rid: 6863118129225007106
-    - rid: 6863118129225007107
-    - rid: 6863118129225007108
-  SerializedTriangleDataUncompressedSize: 5864
+  MapEntities: []
+  SerializedTriangleDataUncompressedSize: 18092
   references:
     version: 2
-    RefIds:
-    - rid: 6863118129225007104
-      type: {class: Transform3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
-      data:
-        Position:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 196608
-          Z:
-            RawValue: 0
-        Rotation:
-          X:
-            RawValue: 5898240
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-    - rid: 6863118129225007105
-      type: {class: PhysicsCollider3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
-      data:
-        ShapeConfig:
-          ShapeType: 32
-          SphereRadius:
-            RawValue: 0
-          CapsuleRadius:
-            RawValue: 32768
-          CapsuleHeight:
-            RawValue: 176947
-          PositionOffset:
-            X:
-              RawValue: 0
-            Y:
-              RawValue: 0
-            Z:
-              RawValue: 0
-          BoxExtents:
-            X:
-              RawValue: 0
-            Y:
-              RawValue: 0
-            Z:
-              RawValue: 0
-          RotationOffset:
-            X:
-              RawValue: 0
-            Y:
-              RawValue: 0
-            Z:
-              RawValue: 0
-          UserTag: 0
-          IsPersistent: 1
-          CompoundShapes: []
-        Layer: 0
-        IsTrigger: 0
-        PhysicsMaterial:
-          Id:
-            Value: 0
-    - rid: 6863118129225007106
-      type: {class: PhysicsBody3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
-      data:
-        Config:
-          Value: 58
-        Mass:
-          RawValue: 65536
-        Drag:
-          RawValue: 0
-        AngularDrag:
-          RawValue: 32768
-        CenterOfMass:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        RotationFreeze:
-          Value: 0
-        GravityScale:
-          _hasValue: 1
-          _value:
-            RawValue: 65536
-    - rid: 6863118129225007107
-      type: {class: PhysicsCallbacks3DPrototype, ns: Quantum.Prototypes, asm: Quantum.Engine}
-      data:
-        CallbackFlags:
-          Value: 0
-    - rid: 6863118129225007108
-      type: {class: CarLinkPrototype, ns: Quantum.Prototypes, asm: Quantum.Simulation}
-      data:
-        Player:
-          _index: 1
+    RefIds: []

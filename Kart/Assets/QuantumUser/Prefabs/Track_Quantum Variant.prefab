@@ -8,25 +8,45 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 232823084126884445, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 806659193841914883, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 916784701650923732, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3128891066739929986, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
       propertyPath: m_Name
       value: Track_Quantum Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3128891066739929986, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3917879575608846847, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4590136192545469915, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4853915645386596614, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.415049
+      value: -13
       objectReference: {fileID: 0}
     - target: {fileID: 4853915645386596614, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.4557996
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 4853915645386596614, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.599729
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4853915645386596614, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -56,6 +76,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7565862091050262621, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 8233797545782943890, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2501502577618830187, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
     - {fileID: 2823392462613247170, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
@@ -79,7 +107,7 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4590136192545469915, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 7146816529835667822}
+      addedObject: {fileID: 2880537451469257729}
     - targetCorrespondingSourceObject: {fileID: 8233797545782943890, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1798610209676598057}
@@ -134,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77e0e138e1b1ba4692b511b31f23385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  Mesh: {fileID: -3931015153527013298, guid: 46eb13d012dcb4088a39a3aeded0a146, type: 3}
   Settings:
     MutableMode: 0
     PhysicsMaterial:
@@ -162,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77e0e138e1b1ba4692b511b31f23385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  Mesh: {fileID: 5760783920918710576, guid: 39e2a36d9eb154d39b77fc97095043cf, type: 3}
   Settings:
     MutableMode: 0
     PhysicsMaterial:
@@ -190,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77e0e138e1b1ba4692b511b31f23385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  Mesh: {fileID: 6540276550240644001, guid: 6ee27571d14d14b32a6ab8e026c9259f, type: 3}
   Settings:
     MutableMode: 0
     PhysicsMaterial:
@@ -410,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77e0e138e1b1ba4692b511b31f23385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  Mesh: {fileID: 1229921546915607640, guid: f11508fdb9ec94e628f639a31d56902a, type: 3}
   Settings:
     MutableMode: 0
     PhysicsMaterial:
@@ -438,7 +466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77e0e138e1b1ba4692b511b31f23385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  Mesh: {fileID: -2090899725002951075, guid: 4f12cf077dba941bb89d33afd2e777ed, type: 3}
   Settings:
     MutableMode: 0
     PhysicsMaterial:
@@ -466,7 +494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77e0e138e1b1ba4692b511b31f23385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  Mesh: {fileID: 9193047911324512064, guid: 9c88761a3e78749c58f98751cfffc9ff, type: 3}
   Settings:
     MutableMode: 0
     PhysicsMaterial:
@@ -482,7 +510,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4590136192545469915, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
   m_PrefabInstance: {fileID: 5124341162238164913}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7146816529835667822
+--- !u!114 &2880537451469257729
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -491,40 +519,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 8695924966812027498}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adc94c3ce6de4c74989839aecde663d8, type: 3}
+  m_Script: {fileID: 11500000, guid: f77e0e138e1b1ba4692b511b31f23385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SourceCollider: {fileID: 0}
-  Size:
-    X:
-      RawValue: 65536
-    Y:
-      RawValue: 65536
-    Z:
-      RawValue: 65536
-  PositionOffset:
-    X:
-      RawValue: 0
-    Y:
-      RawValue: 0
-    Z:
-      RawValue: 0
-  RotationOffset:
-    X:
-      RawValue: 0
-    Y:
-      RawValue: 0
-    Z:
-      RawValue: 0
+  Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
   Settings:
     MutableMode: 0
     PhysicsMaterial:
       Id:
-        Value: 0
+        Value: 3207203172163128735
     Asset:
       Id:
         Value: 0
     Trigger: 0
+  SmoothSphereMeshCollisions: 0
 --- !u!1 &9056402173305426753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4229896995980717296, guid: 18cdfdc09255b5843a49d062dc6f3b2e, type: 3}
@@ -542,7 +550,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77e0e138e1b1ba4692b511b31f23385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  Mesh: {fileID: -3303633314350458598, guid: 64500cf5710f54741a29f63e2ac69099, type: 3}
   Settings:
     MutableMode: 0
     PhysicsMaterial:
@@ -570,7 +578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77e0e138e1b1ba4692b511b31f23385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  Mesh: {fileID: 6394105282989299389, guid: df6cf6f258c4a4779a62d9a0187c2c5a, type: 3}
   Settings:
     MutableMode: 0
     PhysicsMaterial:

@@ -1,8 +1,8 @@
 namespace Quantum
 {
     using Photon.Deterministic;
-    using UnityEngine.Scripting;
     using UnityEngine;
+    using UnityEngine.Scripting;
 
     [Preserve]
     public unsafe class CarSystem : SystemMainThreadFilter<CarSystem.Filter>,
@@ -27,6 +27,8 @@ namespace Quantum
         {
             var input = f.GetPlayerInput(filter.Link->Player);
 
+            filter.PhysicsBody3D->AddForce( filter.Transform->Up * input->Vertical * 50 );
+
             Debug.Log( "Horizontal: " + input->Horizontal );
             Debug.Log( "Vertical: " + input->Vertical );
         }
@@ -35,6 +37,7 @@ namespace Quantum
         {
             public EntityRef Entity;
             public PhysicsBody3D* PhysicsBody3D;
+            public Transform3D* Transform;
             public CarLink* Link;
         }
     }
