@@ -49,6 +49,19 @@ namespace Quantum.Prototypes.Unity {
   using RuntimeInitializeOnLoadMethodAttribute = UnityEngine.RuntimeInitializeOnLoadMethodAttribute;
   #endif //;
   
+  [System.SerializableAttribute()]
+  public unsafe partial class CarPrototype : Quantum.QuantumUnityPrototypeAdapter<Quantum.Prototypes.CarPrototype> {
+    public PlayerRef Player;
+    public Quantum.QuantumEntityPrototype TireEntity;
+    partial void ConvertUser(Quantum.QuantumEntityPrototypeConverter converter, ref Quantum.Prototypes.CarPrototype prototype);
+    public override Quantum.Prototypes.CarPrototype Convert(Quantum.QuantumEntityPrototypeConverter converter) {
+      var result = new Quantum.Prototypes.CarPrototype();
+      converter.Convert(this.Player, out result.Player);
+      converter.Convert(this.TireEntity, out result.TireEntity);
+      ConvertUser(converter, ref result);
+      return result;
+    }
+  }
 }
 #pragma warning restore 0109
 #pragma warning restore 1591

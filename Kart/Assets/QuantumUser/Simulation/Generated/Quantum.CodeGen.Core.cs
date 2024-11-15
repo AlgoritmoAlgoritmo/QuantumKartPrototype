@@ -503,37 +503,43 @@ namespace Quantum {
     }
   }
   [StructLayout(LayoutKind.Explicit)]
-  public unsafe partial struct CarLink : Quantum.IComponent {
-    public const Int32 SIZE = 4;
-    public const Int32 ALIGNMENT = 4;
+  public unsafe partial struct Car : Quantum.IComponent {
+    public const Int32 SIZE = 16;
+    public const Int32 ALIGNMENT = 8;
     [FieldOffset(0)]
     public PlayerRef Player;
+    [FieldOffset(8)]
+    public EntityRef TireEntity;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 8297;
+        var hash = 4457;
         hash = hash * 31 + Player.GetHashCode();
+        hash = hash * 31 + TireEntity.GetHashCode();
         return hash;
       }
     }
     public static void Serialize(void* ptr, FrameSerializer serializer) {
-        var p = (CarLink*)ptr;
+        var p = (Car*)ptr;
         PlayerRef.Serialize(&p->Player, serializer);
+        EntityRef.Serialize(&p->TireEntity, serializer);
     }
   }
   [StructLayout(LayoutKind.Explicit)]
-  public unsafe partial struct TireLink : Quantum.IComponent {
-    public const Int32 SIZE = 4;
-    public const Int32 ALIGNMENT = 4;
+  public unsafe partial struct Tire : Quantum.IComponent {
+    public const Int32 SIZE = 24;
+    public const Int32 ALIGNMENT = 8;
     [FieldOffset(0)]
-    private fixed Byte _alignment_padding_[4];
+    public FPVector3 positionOffset;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 6353;
+        var hash = 433;
+        hash = hash * 31 + positionOffset.GetHashCode();
         return hash;
       }
     }
     public static void Serialize(void* ptr, FrameSerializer serializer) {
-        var p = (TireLink*)ptr;
+        var p = (Tire*)ptr;
+        FPVector3.Serialize(&p->positionOffset, serializer);
     }
   }
   public static unsafe partial class Constants {
@@ -552,8 +558,8 @@ namespace Quantum {
       Initialize(this, this.SimulationConfig.Entities, 256);
       _ComponentSignalsOnAdded = new ComponentReactiveCallbackInvoker[ComponentTypeId.Type.Length];
       _ComponentSignalsOnRemoved = new ComponentReactiveCallbackInvoker[ComponentTypeId.Type.Length];
-      BuildSignalsArrayOnComponentAdded<Quantum.CarLink>();
-      BuildSignalsArrayOnComponentRemoved<Quantum.CarLink>();
+      BuildSignalsArrayOnComponentAdded<Quantum.Car>();
+      BuildSignalsArrayOnComponentRemoved<Quantum.Car>();
       BuildSignalsArrayOnComponentAdded<CharacterController2D>();
       BuildSignalsArrayOnComponentRemoved<CharacterController2D>();
       BuildSignalsArrayOnComponentAdded<CharacterController3D>();
@@ -584,8 +590,8 @@ namespace Quantum {
       BuildSignalsArrayOnComponentRemoved<PhysicsJoints2D>();
       BuildSignalsArrayOnComponentAdded<PhysicsJoints3D>();
       BuildSignalsArrayOnComponentRemoved<PhysicsJoints3D>();
-      BuildSignalsArrayOnComponentAdded<Quantum.TireLink>();
-      BuildSignalsArrayOnComponentRemoved<Quantum.TireLink>();
+      BuildSignalsArrayOnComponentAdded<Quantum.Tire>();
+      BuildSignalsArrayOnComponentRemoved<Quantum.Tire>();
       BuildSignalsArrayOnComponentAdded<Transform2D>();
       BuildSignalsArrayOnComponentRemoved<Transform2D>();
       BuildSignalsArrayOnComponentAdded<Transform2DVertical>();
@@ -634,7 +640,7 @@ namespace Quantum {
       typeRegistry.Register(typeof(Quantum.BitSet6), Quantum.BitSet6.SIZE);
       typeRegistry.Register(typeof(Button), Button.SIZE);
       typeRegistry.Register(typeof(CallbackFlags), 4);
-      typeRegistry.Register(typeof(Quantum.CarLink), Quantum.CarLink.SIZE);
+      typeRegistry.Register(typeof(Quantum.Car), Quantum.Car.SIZE);
       typeRegistry.Register(typeof(CharacterController2D), CharacterController2D.SIZE);
       typeRegistry.Register(typeof(CharacterController3D), CharacterController3D.SIZE);
       typeRegistry.Register(typeof(ColorRGBA), ColorRGBA.SIZE);
@@ -696,7 +702,7 @@ namespace Quantum {
       typeRegistry.Register(typeof(Shape3D), Shape3D.SIZE);
       typeRegistry.Register(typeof(SpringJoint), SpringJoint.SIZE);
       typeRegistry.Register(typeof(SpringJoint3D), SpringJoint3D.SIZE);
-      typeRegistry.Register(typeof(Quantum.TireLink), Quantum.TireLink.SIZE);
+      typeRegistry.Register(typeof(Quantum.Tire), Quantum.Tire.SIZE);
       typeRegistry.Register(typeof(Transform2D), Transform2D.SIZE);
       typeRegistry.Register(typeof(Transform2DVertical), Transform2DVertical.SIZE);
       typeRegistry.Register(typeof(Transform3D), Transform3D.SIZE);
@@ -706,8 +712,8 @@ namespace Quantum {
     static partial void InitComponentTypeIdGen() {
       ComponentTypeId.Reset(ComponentTypeId.BuiltInComponentCount + 2)
         .AddBuiltInComponents()
-        .Add<Quantum.CarLink>(Quantum.CarLink.Serialize, null, null, ComponentFlags.None)
-        .Add<Quantum.TireLink>(Quantum.TireLink.Serialize, null, null, ComponentFlags.None)
+        .Add<Quantum.Car>(Quantum.Car.Serialize, null, null, ComponentFlags.None)
+        .Add<Quantum.Tire>(Quantum.Tire.Serialize, null, null, ComponentFlags.None)
         .Finish();
     }
     [Preserve()]

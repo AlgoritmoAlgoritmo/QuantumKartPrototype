@@ -32,7 +32,7 @@ MonoBehaviour:
   TriangleMeshCellSize: -1
   StaticColliders3DTrianglesData:
     Id:
-      Value: 441669038623798157
+      Value: 535919393049369305
   SerializeTrianglesMetadata: 0
   GridSizeX: 64
   GridSizeY: 64

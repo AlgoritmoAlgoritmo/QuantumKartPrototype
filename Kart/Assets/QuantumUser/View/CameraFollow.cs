@@ -20,7 +20,7 @@ namespace Quantum {
         #region Public methods
         public override void OnActivate( Frame frame ) 
         {
-            var link = frame.Get<CarLink>(EntityRef);
+            var link = frame.Get<Car>(EntityRef);
             isLocal = Game.PlayerIsLocal(link.Player);
         }
 

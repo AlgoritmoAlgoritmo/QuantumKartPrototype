@@ -50,18 +50,18 @@ namespace Quantum.Prototypes {
   #endif //;
   
   [System.SerializableAttribute()]
-  [Quantum.Prototypes.Prototype(typeof(Quantum.CarLink))]
-  public unsafe partial class CarLinkPrototype : ComponentPrototype<Quantum.CarLink> {
+  [Quantum.Prototypes.Prototype(typeof(Quantum.Car))]
+  public unsafe class CarPrototype : ComponentPrototype<Quantum.Car> {
     public PlayerRef Player;
-    partial void MaterializeUser(Frame frame, ref Quantum.CarLink result, in PrototypeMaterializationContext context);
+    public MapEntityId TireEntity;
     public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
-        Quantum.CarLink component = default;
+        Quantum.Car component = default;
         Materialize((Frame)f, ref component, in context);
         return f.Set(entity, component) == SetResult.ComponentAdded;
     }
-    public void Materialize(Frame frame, ref Quantum.CarLink result, in PrototypeMaterializationContext context = default) {
+    public void Materialize(Frame frame, ref Quantum.Car result, in PrototypeMaterializationContext context = default) {
         result.Player = this.Player;
-        MaterializeUser(frame, ref result, in context);
+        PrototypeValidator.FindMapEntity(this.TireEntity, in context, out result.TireEntity);
     }
   }
   [System.SerializableAttribute()]
@@ -77,17 +77,17 @@ namespace Quantum.Prototypes {
     }
   }
   [System.SerializableAttribute()]
-  [Quantum.Prototypes.Prototype(typeof(Quantum.TireLink))]
-  public unsafe partial class TireLinkPrototype : ComponentPrototype<Quantum.TireLink> {
-    [HideInInspector()]
-    public Int32 _empty_prototype_dummy_field_;
-    partial void MaterializeUser(Frame frame, ref Quantum.TireLink result, in PrototypeMaterializationContext context);
+  [Quantum.Prototypes.Prototype(typeof(Quantum.Tire))]
+  public unsafe partial class TirePrototype : ComponentPrototype<Quantum.Tire> {
+    public FPVector3 positionOffset;
+    partial void MaterializeUser(Frame frame, ref Quantum.Tire result, in PrototypeMaterializationContext context);
     public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
-        Quantum.TireLink component = default;
+        Quantum.Tire component = default;
         Materialize((Frame)f, ref component, in context);
         return f.Set(entity, component) == SetResult.ComponentAdded;
     }
-    public void Materialize(Frame frame, ref Quantum.TireLink result, in PrototypeMaterializationContext context = default) {
+    public void Materialize(Frame frame, ref Quantum.Tire result, in PrototypeMaterializationContext context = default) {
+        result.positionOffset = this.positionOffset;
         MaterializeUser(frame, ref result, in context);
     }
   }

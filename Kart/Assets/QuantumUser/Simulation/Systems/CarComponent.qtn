@@ -1,0 +1,5 @@
+namespace Quantum {
+	component CarComponent {
+		EntityPrototype TireEntity;
+	}
+}
